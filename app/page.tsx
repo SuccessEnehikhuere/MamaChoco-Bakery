@@ -1,7 +1,14 @@
-import Image from "next/image";
+import Navbar from '@/components/Navbar'
+import NavHeader from '@/components/NavHeader'
+import Carousel from '@/components/Carousel'
+
 
 export default function Home() {
   return (
-     <h2>hello mama choco</h2>
-  );
+    <main>
+      <NavHeader />
+      <Navbar />
+      <Carousel />
+    </main>
+  )
 }
