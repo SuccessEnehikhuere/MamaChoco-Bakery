@@ -1,14 +1,11 @@
-import Navbar from '@/components/Navbar'
-import NavHeader from '@/components/NavHeader'
-import Carousel from '@/components/Carousel'
+
+import Landing from '@/components/Landing'
 
 
 export default function Home() {
   return (
     <main>
-      <NavHeader />
-      <Navbar />
-      <Carousel />
+      <Landing />
     </main>
   )
 }
