@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 
-.slick-dots li button:before {
-  font-size: 10px;
-  color: #ffffff;
+@font-face {
+  font-family: 'Bespoke Stencil';
+  src: url('/fonts/bespoke-stencil.otf') format('opentype'); 
+  font-weight: normal;
+  font-style: normal; 
 }
-.slick-dots li.slick-active button:before {
-  color: #fbbf24; /* Highlight active dot */
+
+
+
+body {
+  font-family: 'Bespoke Stencil', cursive;
 }
-.custom-dots {
-  margin-top: 1rem;
-}
+
+
