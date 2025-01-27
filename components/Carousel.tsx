@@ -1,77 +1,76 @@
 'use client'
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Slider from 'react-slick'
+import { motion } from 'framer-motion'
+import { CarouselSlides } from '@/utils/CarouselSlides'
 
 function SimpleSlider() {
-  const settings = {
-    dots: true, // Ensure dots are enabled
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 2000, // Faster autoplay speed (2 seconds)
-    slidesToScroll: 1,
-    appendDots: (dots: React.ReactNode) => (
-      <div style={{ bottom: '-20px' }} className="custom-dots">
-        <ul className="flex justify-center space-x-2">{dots}</ul>
-      </div>
-    ),
-    customPaging: () => (
-      <div className="w-3 h-3 bg-gray-400 rounded-full hover:bg-gray-700"></div>
-    ),
-  }
+  const [isLoaded, setIsLoaded] = useState<boolean>(false)
 
-  // Data for slides
-  const slides = [
-    {
-      id: 1,
-      title: 'HAND-MADE SUGAR FLOWERS',
-      description:
-        'Take the stress out of making your own sugar flowers and impress with our wide range of flowers and sprays.',
-      buttonText: 'Shop Now',
-      imgSrc: '/images/carousel.jpg',
-      bgColor: 'bg-purple-900',
-    },
-    {
-      id: 2,
-      title: 'BEAUTIFUL CAKE DESIGNS',
-      description:
-        'Create stunning cakes effortlessly with our exquisite designs and decorations.',
-      buttonText: 'Explore Designs',
-      imgSrc: '/images/carousel.jpg',
-      bgColor: 'bg-blue-800',
-    },
-  ]
+  useEffect(() => {
+    setTimeout(() => setIsLoaded(true), 100) // Slight delay to trigger slide-in animation
+  }, [])
+
+ const settings = {
+   dots: true,
+   infinite: true,
+   speed: 1500, // Subtle and calm fade duration
+   slidesToShow: 1,
+   autoplay: true,
+   autoplaySpeed: 3000,
+   slidesToScroll: 1,
+   fade: true, // Enable fade effect
+   appendDots: (dots: React.ReactNode) => (
+     <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+       <ul style={{ margin: '10px', paddingBottom: '20px' }}>{dots}</ul>
+     </div>
+   ),
+   customPaging: () => (
+     <div className="w-2 h-2 bg-gray-400 rounded-full hover:bg-gray-700"></div>
+   ),
+ }
+
+
 
   return (
-    <div className="slider-container max-w-full overflow-hidden">
+    <motion.div
+      initial={{ y: 100, opacity: 0 }} // Start below the screen and transparent
+      animate={isLoaded ? { y: 0, opacity: 1 } : {}}
+      transition={{ duration: 1.5, ease: 'easeOut' }} // Smooth and subtle transition
+      className="slider-container max-w-full overflow-hidden relative pb-10 mt-5"
+    >
       <Slider {...settings}>
-        {slides.map((slide) => (
-          <div
-            key={slide.id}
-            className={`!flex items-center ${slide.bgColor} h-[426px] rounded-lg overflow-hidden`}
-          >
-            {/* Text Content */}
-            <div className="w-1/2 text-white px-8">
-              <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
-              <p className="text-lg mb-6">{slide.description}</p>
-              <button className="px-6 py-3 bg-white text-black font-semibold rounded-md hover:bg-gray-200">
-                {slide.buttonText}
-              </button>
-            </div>
-            {/* Image */}
-            <div className="w-1/2 h-full">
-              <img
-                src={slide.imgSrc}
-                alt={slide.title}
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-          </div>
-        ))}
+        {CarouselSlides.map(
+          (slide) => (
+            console.log(slide.bgColor, 'color'),
+            (
+              <div
+                key={slide.id}
+                className={`!flex items-center ${slide.bgColor} h-[426px] overflow-hidden`}
+              >
+                {/* Text Content */}
+                <div  className={`w-1/2 text-white px-8`}>
+                  <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
+                  <p className="text-lg mb-6">{slide.description}</p>
+                  <button className="px-6 py-3 bg-white text-black font-semibold rounded-md hover:bg-gray-200">
+                    {slide.buttonText}
+                  </button>
+                </div>
+                {/* Image */}
+                <div className="w-1/2 h-full">
+                  <img
+                    src={slide.imgSrc}
+                    alt={slide.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            )
+          )
+        )}
       </Slider>
-    </div>
+    </motion.div>
   )
 }
 
