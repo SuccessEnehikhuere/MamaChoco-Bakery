@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center mx-auto gap-6 justify-center bg-background">
+    <nav className="flex items-center bg-white mx-auto justify-center border ">
       <div>
-        <Image src="/images/logo.png" alt="logo" width={180} height={70} />
+        <Image src="/images/logo.png" alt="logo" width={170} height={60} />
       </div>
       <div className="flex items-center relative text-xl text-text ">
         {MenuItems.map((item, index) => {
