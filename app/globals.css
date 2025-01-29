@@ -3,17 +3,6 @@
 @tailwind utilities;
 
 
-@font-face {
-  font-family: 'Bespoke Stencil';
-  src: url('/fonts/bespoke-stencil.otf') format('opentype'); 
-  font-weight: normal;
-  font-style: normal; 
-}
 
-
-
-body {
-  font-family: 'Bespoke Stencil', cursive;
-}
 
 

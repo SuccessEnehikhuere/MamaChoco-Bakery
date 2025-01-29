@@ -13,16 +13,10 @@ export default {
         dark: '#3E2B2A',
         text: '#4c2a2c',
         grey: '#adadad',
-      },
-      fontFamily: {
-        bespoke: ['Bespoke Stencil', 'sans-serif'],
+        choco: '#C57B57',
+        brown: '#A66A42',
       },
     },
-    safelist: [
-    'bg-amber-800',
-    'bg-purple-900',
-    'bg-blue-800',
-  ],
   },
   plugins: [],
 } satisfies Config

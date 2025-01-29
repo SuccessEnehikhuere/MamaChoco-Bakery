@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import React from 'react'
-import SectionEnding from './SectionEnding'
 import { FaWhatsapp } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import { FaFacebookF } from 'react-icons/fa6'
@@ -8,8 +7,7 @@ import { MdOutlineEmail } from 'react-icons/md'
 
 const HomeFooter = () => {
   return (
-    <main className='mt-4'>
-      <SectionEnding />
+    <main className="mt-4">
       <main className="flex bg-dark text-white justify-between items-center py-8 mx-auto px-8 md:px-16 mt-8 text-left">
         <div className="flex flex-col">
           <h3 className="font-bold text-xl tracking-wide mb-8">
@@ -76,6 +74,7 @@ const HomeFooter = () => {
               </Link>
             </div>
           </div>
+          <p>09157239802</p>
           <Link href="/faq">
             <p className="underline tracking-wider leading-4 mt-4">FAQ</p>
           </Link>
@@ -91,6 +90,7 @@ const HomeFooter = () => {
           <FaFacebookF />
           <MdOutlineEmail />
         </div>
+        <p></p>
         <p>FAQ</p>
         <p>Pick Up</p>
       </div>

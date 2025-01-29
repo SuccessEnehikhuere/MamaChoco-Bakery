@@ -16,7 +16,7 @@ function FeaturedCakesList() {
           <Link
             key={item.id}
             href={`/cakes/${item.id}`}
-            className="relative flex flex-col rounded-[var(--rounded-box,1rem)] focus:outline-none focus:outline-2 focus:outline-transparent focus:outline-offset-2 w-full shadow-xl transition-transform duration-300"
+            className="relative flex flex-col rounded-[var(--rounded-box,1rem)] focus:outline-none focus:outline-2 focus:outline-transparent focus:outline-offset-2 w-full shadow-xl transition-transform duration-500"
             onMouseEnter={() => setHoveredImage(item.id)}
             onMouseLeave={() => setHoveredImage(null)}
           >

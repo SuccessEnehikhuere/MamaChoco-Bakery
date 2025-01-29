@@ -71,4 +71,25 @@ export const FeaturedList: FeaturedListTypes[] = [
     image: '/images/mine1.jpg',
     image2: '/images/women2.jpg',
   },
+  {
+    id: 10,
+    name: "Women's Cake",
+    price: 'starting from #35,000',
+    image: '/images/mine1.jpg',
+    image2: '/images/women2.jpg',
+  },
+  {
+    id: 11,
+    name: "Women's Cake",
+    price: 'starting from #35,000',
+    image: '/images/mine1.jpg',
+    image2: '/images/women2.jpg',
+  },
+  {
+    id: 12,
+    name: "Women's Cake",
+    price: 'starting from #35,000',
+    image: '/images/mine1.jpg',
+    image2: '/images/women2.jpg',
+  },
 ]

@@ -16,7 +16,7 @@ interface carouselProps  {
        'Take the stress out of making your own sugar flowers and impress with our wide range of flowers and sprays.',
      buttonText: 'Shop Now',
      imgSrc: '/images/cup2.jpg',
-     bgColor: 'bg-amber-800',
+     bgColor: 'red-900',
    },
    {
      id: 2,
@@ -25,7 +25,7 @@ interface carouselProps  {
        'Take the stress out of making your own sugar flowers and impress with our wide range of flowers and sprays.',
      buttonText: 'Shop Now',
      imgSrc: '/images/carousel.jpg',
-     bgColor: 'bg-purple-900',
+     bgColor: 'purple-900',
    },
    {
      id: 3,
@@ -33,8 +33,8 @@ interface carouselProps  {
      description:
        'Create stunning cakes effortlessly with our exquisite designs and decorations.',
      buttonText: 'Explore Designs',
-     imgSrc: '/images/carousel.jpg',
-     bgColor: 'bg-blue-900',
+     imgSrc: '/images/flowercake1.jpg',
+     bgColor: 'blue-900',
    },
    {
      id: 4,
@@ -42,8 +42,8 @@ interface carouselProps  {
      description:
        'Create stunning cakes effortlessly with our exquisite designs and decorations.',
      buttonText: 'Explore Designs',
-     imgSrc: '/images/carousel.jpg',
-     bgColor: 'bg-blue-900',
+     imgSrc: '/images/white2.jpg',
+     bgColor: 'neutral-50',
    },
    {
      id: 5,
@@ -51,8 +51,8 @@ interface carouselProps  {
      description:
        'Create stunning cakes effortlessly with our exquisite designs and decorations.',
      buttonText: 'Explore Designs',
-     imgSrc: '/images/carousel.jpg',
-     bgColor: 'bg-blue-900',
+     imgSrc: '/images/mine1.jpg',
+     bgColor: 'rose-900',
    },
    {
      id: 6,
@@ -61,6 +61,6 @@ interface carouselProps  {
        'Create stunning cakes effortlessly with our exquisite designs and decorations.',
      buttonText: 'Explore Designs',
      imgSrc: '/images/carousel.jpg',
-     bgColor: 'bg-yellow-900',
+     bgColor: 'yellow-900',
    },
  ]

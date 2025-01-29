@@ -8,11 +8,8 @@ import HomeFooter from './HomeFooter'
 function Landing() {
   return (
     <main className='bg-background'>
-      <NavHeader />
-      <Navbar />
-      <Carousel />
-      <FeaturedCakes />
-      <HomeFooter />
+      {/* <Carousel />
+      <FeaturedCakes /> */}
     </main>
   )
 }
