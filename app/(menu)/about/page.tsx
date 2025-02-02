@@ -1,4 +1,4 @@
-import SectionTitle from '@/components/SectionTitle'
+
 import React from 'react'
 
 const page = () => {
@@ -13,7 +13,7 @@ const page = () => {
         </div>
 
         <div>
-          <SectionTitle text="our journey" />
+         
           <p className="text-base capitalize mt-8 leading-8 tracking-wide md:leading-6 md:tracking-wider lg:leading-8 lg:tracking wide">
             At Mamachoco Bakery, we don’t just bake cakes—we craft edible
             stories, turning your sweetest dreams into reality. Every early

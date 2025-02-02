@@ -1,7 +1,5 @@
 import React, { ReactNode } from 'react'
-import Navbar from '@/components/Navbar'
-import NavHeader from '@/components/NavHeader'
-import HomeFooter from '@/components/HomeFooter'
+
 
 
 function layout({children}:{children:ReactNode}) {

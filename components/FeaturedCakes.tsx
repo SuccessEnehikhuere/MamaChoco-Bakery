@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
-import FeaturedCakesList from './FeaturedCakesList'
+import FeaturedCakesList from './PopularCakes/PopularCakesList'
 
 const FeaturedCakes = () => {
   return (
@@ -10,7 +10,5 @@ const FeaturedCakes = () => {
     </div>
   )
 }
-  
-
 
 export default FeaturedCakes

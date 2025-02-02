@@ -3,13 +3,12 @@ import { Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import Navbar from "@/components/Navbar";
-import HomeFooter from "@/components/HomeFooter";
-import NavHeader from "@/components/NavHeader";
 import ResponsiveNav from "@/components/Navigation/ResponsiveNav";
+import Footer from "@/components/Footer/Footer";
 
 
-const barlow_condensed = Barlow_Condensed({
+
+const barlowCondensed = Barlow_Condensed({
   weight: ['300', '400', '500', '600', '700', '800'],
   subsets: ['latin'],
 })
@@ -24,14 +23,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
-    <html lang="en">
-      <body className={barlow_condensed.className}>
-        {/* <NavHeader />
-        <Navbar /> */}
+    <html lang="en" className={barlowCondensed.className}>
+      <body>
         <ResponsiveNav />
         {children}
-        {/* <HomeFooter /> */}
+        <Footer />
       </body>
     </html>
   )
