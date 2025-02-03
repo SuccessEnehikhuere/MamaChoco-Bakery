@@ -2,7 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import logo from '@/public/images/MC.svg'
 import Link from 'next/link'
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaFacebook, FaInstagram,  FaMailchimp,  FaWhatsapp } from 'react-icons/fa'
+import { MdOutlineEmail } from 'react-icons/md'
 
 const Footer = () => {
   return (
@@ -23,16 +24,17 @@ const Footer = () => {
         {/* second */}
         <div>
           <h1 className="text-[23px] font-semibold mb-[2rem] text-white">
-            Payment Option -  <br/>Direct Transfer
+            Payment Option - <br />
+            Direct Transfer
           </h1>
           <p className="mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer w-fit">
-            <strong>Bank Name:</strong> <br/> First Bank
+            <strong>Bank Name:</strong> <br /> First Bank
           </p>
           <p className="mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer w-fit">
-            <strong>Account Name:</strong> <br/> Success Enehikhuere
+            <strong>Account Name:</strong> <br /> Success Enehikhuere
           </p>
           <p className="mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer w-fit">
-            <strong>Account Numner:</strong> <br/> 3214599591
+            <strong>Account Numner:</strong> <br /> 3214599591
           </p>
         </div>
 
@@ -74,22 +76,43 @@ const Footer = () => {
             opening hours
           </h1>
           <p className="text-white text-[18px]">
-            Monday - friday :<span className="text-yellow-300">8am - 6pm</span>
+            Monday - friday :<span className="text-yellow-300"> 8am - 6pm</span>
           </p>
           <p className="text-white text-[18px]">
             Saturday : <span className="text-yellow-300"> 8am - 12am</span>
           </p>
           <div className="flex mt-[2rem] items-center space-x-6">
-            <FaFacebook className="w-[1.5rem] h-[1.5rem] text-blue-400" />
-            <FaInstagram className="w-[1.5rem] h-[1.5rem] text-red-400" />
-            <FaTwitter className="w-[1.5rem] h-[1.5rem] text-blue-300" />
+            <a
+              href="https://www.facebook.com/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className="w-[1.5rem] h-[1.5rem] text-blue-400" />
+            </a>
+            <a
+              href="https://www.instagram.com/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="w-[1.5rem] h-[1.5rem] text-red-400" />
+            </a>
+            <a
+              href="https://wa.me/+2349157239802"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp className="w-[1.5rem] h-[1.5rem] text-green-300" />
+            </a>
+            <a href="mailto:enehikhueres@gmail.com">
+              <MdOutlineEmail className="w-[1.5rem] h-[1.5rem] text-white" />
+            </a>
           </div>
         </div>
       </div>
       {/* {copyright text} */}
-      <p className='text-center text-white opacity-50 mt-[1.5rem]'>
-        Copyright © <span className='text-yellow-300'>MamaChoco Bakery</span> - Cakes, and Pastries shop in
-        Benin, Nigeria
+      <p className="text-center text-white opacity-50 mt-[1.5rem]">
+        Copyright © <span className="text-yellow-300">MamaChoco Bakery</span> -
+        Cakes, and Pastries shop in Benin, Nigeria
       </p>
     </div>
   )

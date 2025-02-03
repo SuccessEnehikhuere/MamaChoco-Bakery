@@ -38,9 +38,15 @@ const ReservationForm = () => {
         />
         <div className="mt-[2rem]  text-center mx-auto">
           {/* wrap this with a link that sends details to whatsapp and email */}
-          <button className="px-8 py-3 rounded-lg mb-[3rem] text-[16px] w-full bg-blue-950 transition-all duration-200 hover:bg-red-600 text-white">
-            Book Now
-          </button>
+          <a
+            href="https://wa.me/+2349157239802?text=I%20want%20to%20book%20a%20cake"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-8 py-3 rounded-lg mb-[3rem] text-[16px] w-full bg-blue-950 transition-all duration-200 hover:bg-red-600 text-white">
+              Book Now
+            </button>
+          </a>
         </div>
       </div>
     </div>

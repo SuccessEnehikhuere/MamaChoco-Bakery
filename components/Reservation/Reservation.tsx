@@ -11,13 +11,13 @@ const Reservation = () => {
         {/* text content */}
         <div>
           <h1 className="text-[30px]  md:text-[40px] lg:text-[50px] text-white font-bold leading-[3rem] md:leading-[4rem]">
-            DO YOU NEED A CAKE FOR YOUR WEDDING/OCCASION? TELL US
+            Need a Cake for Your Wedding or Special Occasion? Tell Us!
           </h1>
           <p className="text-[17px] mt-[1rem] text-white text-opacity-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, similique exercitationem eveniet est temporibus
-            ducimus consequuntur praesentium quae, esse hic dignissimos, eum
-            facilis iure blanditiis minima rerum obcaecati error nulla!
+            We’re here to make your celebration even sweeter! Whether it’s a
+            wedding, birthday, or any special event, our cakes are designed to
+            suit your needs and style. Share your vision with us, and we’ll
+            create a perfect cake just for you.
           </p>
           <div className="flex mt-[2rem] items-center space-x-4">
             <div className="w-[3rem] h-[3rem] bg-red-500 rounded-full flex items-center justify-center flex-col">

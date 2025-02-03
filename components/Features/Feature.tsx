@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
-import img1 from '@/public/images/cupcake1.jpeg'
-import img2 from '@/public/images/cream1.jpg'
-import img3 from '@/public/images/cupcake2.jpeg'
+import img1 from '@/public/images/s1.jpg'
+import img2 from '@/public/images/s2.jpg'
+import img3 from '@/public/images/s3.jpg'
 
 const Feature = () => {
   return (
@@ -22,10 +22,12 @@ const Feature = () => {
               Our Cake
             </h1>
             <p className="mt-[0.2rem] text-black text-opacity-60 text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              corporis suscipit laudantium laboriosam ab natus, architecto
-              recusandae reiciendis esse dolores cupiditate soluta velit tenetur
-              sapiente, perferendis numquam nisi vero ex!
+              At MamaChoco, we create delicious, freshly baked cakes for every
+              occasion. From rich chocolate to fluffy vanilla, our cakes are
+              made with the finest ingredients. Need something special? Our
+              custom designs bring your vision to life. Whether it's a birthday,
+              wedding, or just a sweet treat, we’ve got you covered. Explore our
+              flavors and make every moment unforgettable!
             </p>
           </div>
         </div>
@@ -42,10 +44,11 @@ const Feature = () => {
               Your Opinion is Important
             </h1>
             <p className="mt-[0.2rem] text-black text-opacity-60 text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              corporis suscipit laudantium laboriosam ab natus, architecto
-              recusandae reiciendis esse dolores cupiditate soluta velit tenetur
-              sapiente, perferendis numquam nisi vero ex!
+              We value your feedback and strive to make every experience better.
+              Your thoughts help us improve and create even more delightful
+              moments for you. Whether it’s a suggestion, compliment, or review,
+              we’d love to hear from you! Share your experience and let us know
+              how we can serve you better.
             </p>
           </div>
         </div>
@@ -62,10 +65,11 @@ const Feature = () => {
               Chocolate Cakes
             </h1>
             <p className="mt-[0.2rem] text-black text-opacity-60 text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              corporis suscipit laudantium laboriosam ab natus, architecto
-              recusandae reiciendis esse dolores cupiditate soluta velit tenetur
-              sapiente, perferendis numquam nisi vero ex!
+              Rich, moist, and irresistibly decadent, our chocolate cakes are a
+              chocoholic’s dream. Made with the finest cocoa and premium
+              ingredients, each bite melts in your mouth with pure bliss.
+              Whether for a celebration or a sweet craving, our chocolate cakes
+              are the perfect treat.
             </p>
           </div>
         </div>

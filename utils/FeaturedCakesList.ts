@@ -11,7 +11,7 @@ export const FeaturedList: FeaturedListTypes[] = [
   {
     id: 1,
     name: 'simple buttercream cake',
-    price: 'starting from #10,000',
+    price: 'starting from #15,000',
     image: '/images/cream1.jpg',
     image2: '/images/flowercake1.jpg',
   },

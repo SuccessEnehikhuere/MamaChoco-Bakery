@@ -1,15 +1,18 @@
 
 import React from 'react'
+import image from '@/public/images/me.jpg'
+import Image from 'next/image'
 
 const page = () => {
   return (
     <section className=" py-8">
       <div className="grid gap-16 md:grid-cols-2">
         <div>
-          {/* <img
+          <Image
             src={image}
+            alt='ceo image'
             className="object-cover  h-full rounded-lg shadow-md "
-          /> */}
+          />
         </div>
 
         <div>
